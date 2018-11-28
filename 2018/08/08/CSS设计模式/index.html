@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html style="display: none;" lang="zh">
-    <head>
+    <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
     <!--
         © Material Theme
@@ -25,7 +25,7 @@
 
 
 
-        <link rel="dns-prefetch" href="https://cdn-city.livere.com"/>
+        <link rel="dns-prefetch" href="https://cdn-city.livere.com">
 
 
 
@@ -54,14 +54,14 @@
     <link rel="icon shortcut" type="image/ico" href="/img/1.jpg">
     <link rel="icon" href="/img/1.jpg">
 
-    <meta name="format-detection" content="telephone=no"/>
+    <meta name="format-detection" content="telephone=no">
     <meta name="description" itemprop="description" content="">
     <meta name="keywords" content=",CSS">
     <meta name="theme-color" content="#0097A7">
 
     <!-- Disable Fucking Bloody Baidu Tranformation -->
-    <meta http-equiv="Cache-Control" content="no-transform" />
-    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
 
     <!--[if lte IE 9]>
         <link rel="stylesheet" href="/css/ie-blocker.css">
@@ -236,7 +236,7 @@
 
     
         <meta property="article:published_time" content="Wed Aug 08 2018 22:48:50 GMT+0800">
-        <meta property="article:modified_time" content="Wed Aug 08 2018 22:55:16 GMT+0800">
+        <meta property="article:modified_time" content="Wed Nov 28 2018 12:09:17 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -244,7 +244,7 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="http://yoursite.com/2018/08/08/CSS设计模式/index.html" />
+        <link rel="canonical" href="http://yoursite.com/2018/08/08/CSS设计模式/index.html">
     
 
     <!-- Structured-data for SEO -->
@@ -259,7 +259,7 @@
     "mainEntityOfPage": "http://yoursite.com/2018/08/08/CSS设计模式/index.html",
     "headline": "CSS设计模式",
     "datePublished": "Wed Aug 08 2018 22:48:50 GMT+0800",
-    "dateModified": "Wed Aug 08 2018 22:55:16 GMT+0800",
+    "dateModified": "Wed Nov 28 2018 12:09:17 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "寒山远黛",
@@ -336,6 +336,14 @@
     <!-- Left aligned menu below button -->
     
     
+    <button id="post-toc-trigger-btn" class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#什么是设计模式？"><span class="post-toc-number">1.</span> <span class="post-toc-text">什么是设计模式？</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#从需求层面"><span class="post-toc-number">2.</span> <span class="post-toc-text">从需求层面</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#从结构层面"><span class="post-toc-number">3.</span> <span class="post-toc-text">从结构层面</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#从现有模式层面"><span class="post-toc-number">4.</span> <span class="post-toc-text">从现有模式层面</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#从实际层面"><span class="post-toc-number">5.</span> <span class="post-toc-text">从实际层面</span></a></li></ol>
+    </ul>
+    
 
 
 
@@ -379,7 +387,7 @@
 
     <!-- Author Avatar -->
     <div id="author-avatar">
-        <img src="/img/1.jpg" width="44px" height="44px" alt="Author Avatar"/>
+        <img src="/img/1.jpg" width="44px" height="44px" alt="Author Avatar">
     </div>
     <!-- Author Name & Date -->
     <div>
@@ -409,7 +417,7 @@
     <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
         <li class="mdl-menu__item">
         <a class="post_tag-link" href="/tags/CSS/">CSS</a>
-    </ul>
+    </li></ul>
     
 
     <!-- Share -->
@@ -477,7 +485,142 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        
+        <p><img src="/Users/yanlixing/Pictures/609030-636402179425109240-16x9.jpg" alt=""></p>
+<a id="more"></a>
+<h4 id="什么是设计模式？"><a href="#什么是设计模式？" class="headerlink" title="什么是设计模式？"></a>什么是设计模式？</h4><blockquote>
+<p>提到设计模式，有人会说，这不就是你们工程狮经常装x的词汇么，但我觉得，这玩意儿只有你懂，用的到的时候才有用，基本上用得上的地方还是少的吧～</p>
+<p>上软工课那会儿，设计模式(design pattern)是对<a href="https://zh.wikipedia.org/wiki/%E8%BB%9F%E4%BB%B6%E8%A8%AD%E8%A8%88" target="_blank" rel="noopener">软件设计</a>中普遍存在(反复出现)的各种问题，所提出的解决方案这个术语是由<a href="https://zh.wikipedia.org/wiki/%E5%9F%83%E9%87%8C%E5%B8%8C%C2%B7%E4%BC%BD%E7%91%AA" target="_blank" rel="noopener">埃里希·伽玛</a>(Erich Gamma)等人在1990年代从<a href="https://zh.wikipedia.org/wiki/%E5%BB%BA%E7%AD%91%E8%AE%BE%E8%AE%A1" target="_blank" rel="noopener">建筑设计</a>领域引入到<a href="https://zh.wikipedia.org/wiki/%E8%A8%88%E7%AE%97%E6%A9%9F%E7%A7%91%E5%AD%B8" target="_blank" rel="noopener">计算机科学</a>，大白话设计模式就是基石脉络，同建筑结构一样。</p>
+<p>接下来引入官方解释～，设计模式并不直接用来完成<a href="https://zh.wikipedia.org/wiki/%E7%A8%8B%E5%BC%8F%E7%A2%BC" target="_blank" rel="noopener">代码</a>的编写，而是描述在各种不同情况下，要怎么解决问题的一种方案。<a href="https://zh.wikipedia.org/wiki/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1" target="_blank" rel="noopener">面向对象</a>设计模式通常以<a href="https://zh.wikipedia.org/wiki/%E7%B1%BB_(%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6" target="_blank" rel="noopener">类别</a>)或<a href="https://zh.wikipedia.org/wiki/%E7%89%A9%E4%BB%B6_(%E9%9B%BB%E8%85%A6%E7%A7%91%E5%AD%B8" target="_blank" rel="noopener">对象</a>)来描述其中的关系和相互作用，但不涉及用来完成应用程序的特定类别或对象。设计模式能使不稳定依赖于相对稳定、具体依赖于相对抽象，避免会引起麻烦的紧耦合，以增强软件设计面对并适应变化的能力。</p>
+<p>并非所有的软件模式都是设计模式，设计模式特指软件“设计”层次上的问题。还有其他非设计模式的模式，如<a href="https://zh.wikipedia.org/w/index.php?title=%E6%9E%B6%E6%A7%8B%E6%A8%A1%E5%BC%8F&amp;action=edit&amp;redlink=1" target="_blank" rel="noopener">架构模式</a>。同时，<a href="https://zh.wikipedia.org/wiki/%E6%BC%94%E7%AE%97%E6%B3%95" target="_blank" rel="noopener">算法</a>不能算是一种设计模式，因为算法主要是用来解决计算上的问题，而非设计上的问题。</p>
+<p>随着软件开发社群对设计模式的兴趣日益增长，已经出版了一些相关的专著，定期召开相应的研讨会，而且<a href="https://zh.wikipedia.org/wiki/%E6%B2%83%E5%BE%B7%C2%B7%E5%9D%8E%E5%AE%81%E5%AE%89" target="_blank" rel="noopener">沃德·坎宁安</a>（Ward Cunningham）为此发明了<a href="https://zh.wikipedia.org/wiki/WikiWiki" target="_blank" rel="noopener">WikiWiki</a>用来交流设计模式的经验。</p>
+</blockquote>
+<p>更为详细的解释<a href="https://zh.wikipedia.org/wiki/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F_(%E8%AE%A1%E7%AE%97%E6%9C%BA" target="_blank" rel="noopener">点这里</a>)</p>
+<p>今天谈谈 CSS 设计模式</p>
+<p>这个词汇很常见，几乎所有阵营的编程语言都会有几套，但都没有深入研究，原因如下：</p>
+<ul>
+<li>有问题修改或者按团队规范就行了，那么钻牛角尖干嘛</li>
+<li>我就是不用能咋滴啊～。</li>
+<li>说白了就是用不到～～啊，现在写的一些样式代码量还达不到需要规划组织的程度，常写的布局，动画，还得兼顾兼容，哪来的时间去想去这些方法论的问题。</li>
+</ul>
+<p>这都是我经历过的，你们肯定也是～</p>
+<p>但随着时间的推移，个人技术的成长，肯定会接触到更大更多更复杂的项目，这时候就需要自上而下，全流程的去思考一些问题，比如：风格的制定、色调、模块、布局方式、交互方式、逻辑等等，如果再加上团队合作，若再没有一个规划的话，要不了多久，那些看起来没问题的代码，就会暴露出各种问题，模块命名、类的命名、文件的组织、共用模块的提取、代码的复用、可读性、扩展性、维护性，现今项目通常都相当复杂</p>
+<p>既然对 CSS 进行设计，那么证明本身还是存在一些问题的，最明显的就是，<strong>它任何一个规则都是全局性的声明，会对引入它当前页面中所有相关元素起作用，不管这个效果是不是你要的，这个时候你需要的是一个独立且可整合可维护的模块。</strong></p>
+<h4 id="从需求层面"><a href="#从需求层面" class="headerlink" title="从需求层面"></a>从需求层面</h4><p><strong>布局</strong></p>
+<p>刚开始上学写记叙文的时候并不会考虑六要素，通常都是下笔即写，因为我们意识不到，写代码也一样，一开始我们只是去定义规则，属性，语法正确，页面做出来了就ok，但慢慢发现，页面是有“骨架”的，按照骨架去组织代码不是美哉？比如header，navigation，slider，banner，content，footer。</p>
+<p>但一些组件的复用性还是很高的，又不能单独算一个模块，比如 Breadcrumb Trail，Pagination，Modal。</p>
+<p>这些需要单独拆分css还有与之对应的js，应该算早期的组件化思路。</p>
+<p><strong>拆分</strong></p>
+<p>通过上面的布局分析，现在组织清晰了很多，维护性明显高了很多，但仔细研究，这还不够，还有一些细微的功能复用性也很高，比如 border，background，icon，font，layout，这些如果在需要用的地方都定义一次，代码仓库就爆炸了，维护就很困难了，所以需要拆分开。</p>
+<p><strong>排序</strong></p>
+<p>经过了布局和拆分，代码结构已经很清晰了，内容，功能模块架子已经搭好，分类清晰后还需要排序，比如你会看到如下：</p>
+<ul>
+<li><pre><code class="css">@import “common._eset.css”;
+@import “icon_sprite.css”;
+@import “common_btns.css”;
+@import “common_header.css”;
+@import “common_tab.css”;
+@import “common_footer.css”;
+</code></pre>
+</li>
+</ul>
+<p>看，现在是不是清晰了很多，而且很容易维护，同时有利于继承或层叠。</p>
+<p>此外还可进行代码范围比如：</p>
+<ul>
+<li>文件头部建立一个简要目录</li>
+<li>利用区块注释(详细写明改代码的目的，状态切换，调整原因，交互逻辑，利己又利人)</li>
+</ul>
+<h4 id="从结构层面"><a href="#从结构层面" class="headerlink" title="从结构层面"></a>从结构层面</h4><p><strong>层级嵌套</strong></p>
+<p>我同事写过十级嵌套 CSS，墙都不扶，就扶他！只要对浏览器的渲染原理有点了解的都知道，在解析 CSS 规则的时候，是从右向左，一层层的去遍历寻找，如果层级太多，必然增加了渲染时间，影响渲染速度，另外，如果选择器层级过多，也就间接反应了，你的HTML结构可能写得不够简洁，其实从我们日常需求来看，4层以内足可以解决绝大多数问题。</p>
+<p><strong>避免使用元素选择器</strong></p>
+<p>在 HTML 中，有很多常用的高频元素，比如，div、p、span、a、ul等，如果你在多层选择器的最内层使用了元素选择器，那么在开始寻找时，浏览器就会遍历HTML中的所有该元素，这是没有必要的，在具体的代码模块中，尽量不要使用元素选择器，否则会出现一些不可预料的问题。</p>
+<p><strong>文件引入的数量和顺序</strong></p>
+<p>看起来似乎影响不到什么，无非就是多请求几次 ，样式是否加载，如果出于对用户体验的极致追求，还是希望请求减少文件加载先后，以防在难以缩减文件大小的时候能正常并正确展示用户先看到的。</p>
+<h4 id="从现有模式层面"><a href="#从现有模式层面" class="headerlink" title="从现有模式层面"></a>从现有模式层面</h4><p><strong>OOCSS</strong></p>
+<p>OOCSS 并不是什么新技术，只是一种撰写 CSS 的设计模式，重点两个：</p>
+<ul>
+<li>减少对 HTML 结构的依赖</li>
+<li>增加 CSS</li>
+</ul>
+<p>它的两个 O 分别是</p>
+<p>O =&gt; Object</p>
+<p>O =&gt; Oriented</p>
+<p>它的两大原则</p>
+<ul>
+<li>结构(Structure)与样式(Skin)分离</li>
+<li>容器(Container)与内容(Content)分离</li>
+</ul>
+<p>全写一起是这样</p>
+<pre><code class="css">#box{
+  width: 500px;
+  border: solid 1px #000;
+  background: #aaf;
+  box-shadow: rgba(0, 0, 0, 0.5) 5px 5px 5px;
+}
+
+#button{
+  width: 100px;
+  height: 50px;
+  padding: 10px;
+  border: solid 1px #000;
+  box-shadow: rgba(0, 0, 0, .5) 5px 5px 5px;
+}
+</code></pre>
+<p>结构样式分离</p>
+<pre><code class="css">.box{
+  width: 500px;
+}
+
+.button{
+  width: 100px;
+  height: 50px;
+  padding: 10px;
+}
+
+.skin{
+  border: solid 1px #000;
+  bacdground: #aaf;
+  box-shadow: rgba(0, 0, 0, 0.5) 5px 5px 5px;
+}
+</code></pre>
+<p>容器与内容分离</p>
+<pre><code class="html">&lt;div class=&quot;box&quot;&gt;
+  &lt;div class=&quot;box-img&quot;&gt;
+    &lt;img src=&quot;...&quot;&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;box-content&quot;&gt;
+    &lt;p&gt;&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<p>这样既可以增加 CSS 的复用性，相同组件只需套用一个 CSS 即可。</p>
+<p>Bootstarp 其实就是个很棒的 OOCSS 例子，但过度使用也会让 HTML 长度和阅读还有管理难度增加</p>
+<p><strong>SMACSS</strong></p>
+<p>1、Base<br>浏览器的 reset 可以写在这里,这里只会对标签元素本身做设定，不会出现任何 class 或 id，但是可以有属性选择器或是伪类：</p>
+<pre><code class="css">html {}
+input[type=text] {}
+a:hover {}
+</code></pre>
+<p>2、Layout<br>Layout 是指整个网站的「大架构」的外观，而非 <code>.button</code> 这种小元件的 class，网站通常会有一些主要的大区块，可能是 header 或 footer，Layout 就是用来定义这些「大架构」的 CSS。</p>
+<pre><code class="html">#header { margin: 30px 0; }
+#articles-wrapper { ......; }
+.sidebar {
+  &amp;.sidebar--right { ......; }
+  &amp;.sidebar-left { ......; }
+}
+</code></pre>
+<p>3、Module<br>模块样式，就是我们在对页面进行拆的过程中，所抽取分类的模块，这类的样式分别写到一起.</p>
+<p>4、State<br>State 负责定义元素不同的状态下，所呈现的样式</p>
+<pre><code class="html">&lt;nav class=&quot;nav--main&quot;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a&gt;.........&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;active&quot;&gt;&lt;a&gt;.........&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a&gt;.........&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+</code></pre>
+<p>5、Theme<br>Theme 是画面上所有「主视觉」的定义</p>
+<h4 id="从实际层面"><a href="#从实际层面" class="headerlink" title="从实际层面"></a>从实际层面</h4><p>虽然已有成熟的设计模式，但是跟自己的项目可能不搭，这时就需要去实践，最好的模式就是在项目进行中，不断的磨合调整而出</p>
+
         
     
 
@@ -519,13 +662,21 @@
             <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
     <!-- Prev Nav -->
     
+        <a href="/2018/11/20/关于-React-的一些使用心得/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            新篇
+        </a>
+    
 
     <!-- Section Spacer -->
     <div class="section-spacer"></div>
 
     <!-- Next Nav -->
     
-        <a href="/2018/07/28/前端如何机智地弄坏一台电脑/" id="post_nav-older" class="next-content">
+        <a href="/2018/07/25/无时间日/" id="post_nav-older" class="next-content">
             旧篇
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
@@ -620,8 +771,8 @@
             </a>
             <ul class="dropdown-menu">
                 <li>
-                <a class="sidebar_archives-link" href="/categories/CSS/">CSS<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/CSS3/">CSS3<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Git/">Git<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/JavaScript/">JavaScript<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/categories/NPM/">NPM<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Node/">Node<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/Sublime-Text3/">Sublime Text3<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/axios/">axios<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/hexo/">hexo<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/vue/">vue<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/windows/">windows<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/杂记/">杂记<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/浏览器-安全/">浏览器/安全<span class="sidebar_archives-count">1</span></a>
-            </ul>
+                <a class="sidebar_archives-link" href="/categories/CSS/">CSS<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/CSS3/">CSS3<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Git/">Git<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/JavaScript/">JavaScript<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/categories/NPM/">NPM<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Node/">Node<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/Sublime-Text3/">Sublime Text3<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/axios/">axios<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/hexo/">hexo<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/vue/">vue<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/windows/">windows<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/杂记/">杂记<span class="sidebar_archives-count">1</span></a>
+            </li></ul>
         </li>
         
     
@@ -661,7 +812,7 @@ It will not impact the appearance and can give developers a lot of support :)
 
 
 <!-- 外链播放器 -->
-<iframe frameborder="no" border="1" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=26344067&auto=0&height=66"></iframe>
+<iframe frameborder="no" border="1" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=26344067&auto=0&height=66"></iframe>
 
 <!-- Theme Material -->
 <!-- 
