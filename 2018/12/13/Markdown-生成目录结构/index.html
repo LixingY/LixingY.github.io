@@ -45,7 +45,7 @@
     
     <title>
         
-            标签: IOS | 
+            Markdown 生成目录结构 | 
         
         寒山远黛
     </title>
@@ -56,7 +56,7 @@
 
     <meta name="format-detection" content="telephone=no">
     <meta name="description" itemprop="description" content="">
-    <meta name="keywords" content="">
+    <meta name="keywords" content=",Markdown">
     <meta name="theme-color" content="#0097A7">
 
     <!-- Disable Fucking Bloody Baidu Tranformation -->
@@ -212,7 +212,7 @@
     <!-- WebAPP Icons -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="寒山远黛">
-    <meta name="msapplication-starturl" content="http://yoursite.com/tags/IOS/">
+    <meta name="msapplication-starturl" content="http://yoursite.com/2018/12/13/Markdown-生成目录结构/">
     <meta name="msapplication-navbutton-color" content="#0097A7">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="寒山远黛">
@@ -227,13 +227,16 @@
     
 
     <!-- The Open Graph protocol -->
-    <meta property="og:url" content="http://yoursite.com/tags/IOS/">
+    <meta property="og:url" content="http://yoursite.com/2018/12/13/Markdown-生成目录结构/">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="标签: IOS | 寒山远黛">
+    <meta property="og:title" content="Markdown 生成目录结构 | 寒山远黛">
     <meta property="og:image" content="/img/1.jpg">
     <meta property="og:description" content="">
-    
+    <meta property="og:article:tag" content="Markdown"> 
 
+    
+        <meta property="article:published_time" content="Thu Dec 13 2018 10:14:43 GMT+0800">
+        <meta property="article:modified_time" content="Thu Dec 13 2018 15:50:55 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -241,13 +244,43 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="http://yoursite.com/tags/IOS/index.html">
+        <link rel="canonical" href="http://yoursite.com/2018/12/13/Markdown-生成目录结构/index.html">
     
 
     <!-- Structured-data for SEO -->
     
         
 
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "http://yoursite.com/2018/12/13/Markdown-生成目录结构/index.html",
+    "headline": "Markdown 生成目录结构",
+    "datePublished": "Thu Dec 13 2018 10:14:43 GMT+0800",
+    "dateModified": "Thu Dec 13 2018 15:50:55 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "寒山远黛",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/1.jpg"
+        },
+        "description": "待有朝一日 , 我修炼成通彻天地的应龙 , 就让你做在龙角旁乘奔御风 , 看尽山河风光"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "寒山远黛",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/1.jpg"
+        }
+    },
+    "keywords": ",Markdown",
+    "description": "",
+}
+</script>
 
 
     
@@ -280,98 +313,362 @@
                         </button>
                     
 
-                    <!-- Index Module -->
-<div class="material-index mdl-grid">
-    
-    <div class="locate-thumbnail-symbol"></div>
+                    <!-- Post TOC -->
 
-    <!-- Pin on top -->
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+    <button id="post-toc-trigger-btn" class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#前言"><span class="post-toc-number">1.</span> <span class="post-toc-text">前言</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#什么是-tree"><span class="post-toc-number">2.</span> <span class="post-toc-text">什么是 tree</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#怎么装"><span class="post-toc-number">3.</span> <span class="post-toc-text">怎么装</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#部分常用命令"><span class="post-toc-number">4.</span> <span class="post-toc-text">部分常用命令</span></a></li></ol>
+    </ul>
     
 
-    <!-- Normal Post -->
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
     
         
             <!-- Random Thumbnail -->
             <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
+            <script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 19 + 1);
 
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2018/11/28/Development-cannot-be-enabled-while-your-drive-is-locked/">Development cannot be enabled while your drive is locked</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2018/11/28/Development-cannot-be-enabled-while-your-drive-is-locked/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/1.jpg" width="44px" height="44px" alt="寒山远黛's avatar">
-            </div>
-            <div>
-                <strong>寒山远黛</strong>
-                <span>11月 28, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-              <!-- Category -->
-              <span class="post_entry-category">
-                  <a class="post_category-link" href="/categories/IOS/">IOS</a>
-              </span>
-            
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-
-    
-
-    
-        <script type="text/ls-javascript" id="thumbnail-script">
-    var randomNum;
-
-    var locatePost = $('.locate-thumbnail-symbol').next();
-    for(var i = 0; i < 10; i++) {
-        randomNum = Math.floor(Math.random() * 19 + 1);
-
-        locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
-        locatePost.children('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
     $('.post_thumbnail-random').addClass('lazy');
-
-        locatePost = locatePost.next();
-    }
 </script>
 
+        
+    
+            <p class="article-headline-p">
+                Markdown 生成目录结构
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/1.jpg" width="44px" height="44px" alt="Author Avatar">
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>寒山远黛</strong>
+        <span>12月 13, 2018</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-link" href="/tags/Markdown/">Markdown</a>
+    </li></ul>
+    
+
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=Markdown 生成目录结构&url=http://yoursite.com/2018/12/13/Markdown-生成目录结构/index.html&pic=http://yoursite.com/img/1.jpg&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=Markdown 生成目录结构&url=http://yoursite.com/2018/12/13/Markdown-生成目录结构/index.html&via=寒山远黛" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2018/12/13/Markdown-生成目录结构/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://yoursite.com/2018/12/13/Markdown-生成目录结构/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
     
 </div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <p><img src="https://ws3.sinaimg.cn/large/006tNbRwly1fy4yet4rk6j31a80sggll.jpg" alt=""></p>
+<a id="more"></a>
+<h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4><blockquote>
+<p>Markdown 作为标记语言可以非常方便的排版以及适用于各大平台的适配，沉浸式的写作体验可以让你专注于写作而不会在排版上，安利一款 mac 极简 Markdown 编辑器 「Typora」 <a href="https://typora.io/" target="_blank" rel="noopener">点这里</a> 体验。</p>
+</blockquote>
+<h4 id="什么是-tree"><a href="#什么是-tree" class="headerlink" title="什么是 tree"></a>什么是 tree</h4><p>最近团队封装组件库，需要编写 README.md，但是没有目录的话阅读代码结构是很困难的，经常性会看见这种</p>
+<pre><code>├── build
+├── config
+├── docs
+│   └── static
+│       ├── css
+│       └── js
+├── src
+│   ├── assets
+│   ├── components
+│   ├── store
+│   │   └── modules
+│   └── views
+│       ├── book
+│       └── movie
+└── static
+</code></pre><p>那么这种目录的话其实在 mac 上其实是没有 tree 命令的，不过可以用 find 命令模拟出  tree 命令的效果</p>
+<pre><code>$ find . -print | sed -e ``&#39;s;[^/]*/;|____;g;s;____|; |;g&#39;
+</code></pre><p>当然每次这样很麻烦。。，作为程序员，以最简单的数组去重来说我肯定不会用 es5 ，肯定会像这样 </p>
+<pre><code class="javascript">[1, 2, 3, 1, 2, 3].filter((el, i, arr) =&gt; i === arr.indexOf(el));
+</code></pre>
+<p>macOS 终端也可快速使用命令，打开 .zshrc 文件，可用 sublime or vscode or 你喜欢的任何软件打开，找到 # Example aliases，新增一行 </p>
+<pre><code>alias tree=&quot;find . -print | sed -e &#39;s;[^/]*/;|____;g;s;____|; |;g&#39;&quot;
+</code></pre><p><img src="https://ws2.sinaimg.cn/large/006tNbRwly1fy4yqitfc3j30qu0gctbc.jpg" alt=""></p>
+<p>虽然可以显示出 tree 目录，但是无法指定层级，很麻烦</p>
+<p>你也可以设置其它的，比如我这样</p>
+<pre><code>alias ..=&quot;cd ..&quot;
+alias ...=&quot;cd ../..&quot;
+alias ....=&quot;cd ../../..&quot;
+alias gbr=&quot;git branch&quot;
+alias gs=&quot;git status&quot;
+alias pl=&quot;git pull&quot;
+alias gd=&quot;git diff&quot;
+alias gco=&quot;git checkout&quot;
+alias gl=&quot;git log&quot;
+alias gps=&quot;git push&quot;
+alias gc=&quot;git clone &quot;
+alias cls=&quot;clear&quot;
+</code></pre><p>这不是偷懒，  &gt;_&gt;，这是提高工作效(bi)率(ge)</p>
+<h4 id="怎么装"><a href="#怎么装" class="headerlink" title="怎么装"></a>怎么装</h4><p>除了以上比较麻烦的命令行，也可以使用 Homebrew 安装，如下</p>
+<pre><code>brew install tree
+</code></pre><p><img src="https://ws1.sinaimg.cn/large/006tNbRwly1fy4yumn84sj31vq05gdjd.jpg" alt=""></p>
+<p>在某个项目下执行 tree 命令即可</p>
+<pre><code># tree -L 1 指只显示一级目录
+.
+├── README.md
+├── index.html
+├── index.js
+├── node_modules
+└── package.json
+</code></pre><p>tree 命令后面的参数有其他可选，具体我们可以用 tree –help 来查看</p>
+<pre><code>usage: tree [-acdfghilnpqrstuvxACDFJQNSUX] [-H baseHREF] [-T title ]
+        [-L level [-R]] [-P pattern] [-I pattern] [-o filename] [--version]
+        [--help] [--inodes] [--device] [--noreport] [--nolinks] [--dirsfirst]
+        [--charset charset] [--filelimit[=]#] [--si] [--timefmt[=]&lt;f&gt;]
+        [--sort[=]&lt;name&gt;] [--matchdirs] [--ignore-case] [--] [&lt;directory list&gt;]
+  ------- Listing options -------
+  -a            All files are listed.
+  -d            List directories only.
+  -l            Follow symbolic links like directories.
+  -f            Print the full path prefix for each file.
+  -x            Stay on current filesystem only.
+  -L level      Descend only level directories deep.
+  -R            Rerun tree when max dir level reached.
+  -P pattern    List only those files that match the pattern given.
+  -I pattern    Do not list files that match the given pattern.
+  --ignore-case Ignore case when pattern matching.
+  --matchdirs   Include directory names in -P pattern matching.
+  --noreport    Turn off file/directory count at end of tree listing.
+  --charset X   Use charset X for terminal/HTML and indentation line output.
+  --filelimit # Do not descend dirs with more than # files in them.
+  --timefmt &lt;f&gt; Print and format time according to the format &lt;f&gt;.
+  -o filename   Output to file instead of stdout.
+  -------- File options ---------
+  -q            Print non-printable characters as &#39;?&#39;.
+  -N            Print non-printable characters as is.
+  -Q            Quote filenames with double quotes.
+  -p            Print the protections for each file.
+  -u            Displays file owner or UID number.
+  -g            Displays file group owner or GID number.
+  -s            Print the size in bytes of each file.
+  -h            Print the size in a more human readable way.
+  --si          Like -h, but use in SI units (powers of 1000).
+  -D            Print the date of last modification or (-c) status change.
+  -F            Appends &#39;/&#39;, &#39;=&#39;, &#39;*&#39;, &#39;@&#39;, &#39;|&#39; or &#39;&gt;&#39; as per ls -F.
+  --inodes      Print inode number of each file.
+  --device      Print device ID number to which each file belongs.
+  ------- Sorting options -------
+  -v            Sort files alphanumerically by version.
+  -t            Sort files by last modification time.
+  -c            Sort files by last status change time.
+  -U            Leave files unsorted.
+  -r            Reverse the order of the sort.
+  --dirsfirst   List directories before files (-U disables).
+  --sort X      Select sort: name,version,size,mtime,ctime.
+  ------- Graphics options ------
+  -i            Don&#39;t print indentation lines.
+  -A            Print ANSI lines graphic indentation lines.
+  -S            Print with CP437 (console) graphics indentation lines.
+  -n            Turn colorization off always (-C overrides).
+  -C            Turn colorization on always.
+  ------- XML/HTML/JSON options -------
+  -X            Prints out an XML representation of the tree.
+  -J            Prints out an JSON representation of the tree.
+  -H baseHREF   Prints out HTML format with baseHREF as top directory.
+  -T string     Replace the default HTML title and H1 header with string.
+  --nolinks     Turn off hyperlinks in HTML output.
+  ---- Miscellaneous options ----
+  --version     Print version and exit.
+  --help        Print usage and this help message and exit.
+  --            Options processing terminator.
+</code></pre><h4 id="部分常用命令"><a href="#部分常用命令" class="headerlink" title="部分常用命令"></a>部分常用命令</h4><ul>
+<li>tree -a 显示所有</li>
+<li>tree -d 只显示文件夹</li>
+<li>tree -L n 显示项目的层级，n表示层级数，比如想要显示项目三层结构，可以用tree -l 3； </li>
+<li>tree -I pattern 用于过滤不想要显示的文件或者文件夹。比如你想要过滤项目中的 node_modules 文件夹，可以使用 tree -I “node_modules”； </li>
+<li>tree &gt; tree.md 将项目结构输出到 tree.md 这个文件</li>
+</ul>
+
+        
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+    <!-- 使用 来必力 -->
+<div id="livere-comment">
+    <div id="lv-container" data-id="city" data-uid="MTAyMC8zODEwOC8xNDYzOA==">
+	<script type="text/ls-javascript" id="livere-comment-js">
+   (function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
+       if (typeof LivereTower === 'function') { return; }
+       j = d.createElement(s);
+       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+       j.async = true;
+       e.parentNode.insertBefore(j, e);
+   })(document, 'script');
+	</script>
+</div>
+</div>
+<style>
+    #livere-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2018/12/12/Homebrew/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
 
 
                     
@@ -530,6 +827,14 @@ It will not impact the appearance and can give developers a lot of support :)
 </aside>
 
                     
+
+                    
+                        <!-- Footer Top Button -->
+                        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
 
                     
 
