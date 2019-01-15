@@ -45,7 +45,7 @@
     
     <title>
         
-            标签: React | 
+            Vue warn &#34;Property or method index is not defined on the...&#34; | 
         
         寒山远黛
     </title>
@@ -56,7 +56,7 @@
 
     <meta name="format-detection" content="telephone=no">
     <meta name="description" itemprop="description" content="">
-    <meta name="keywords" content="">
+    <meta name="keywords" content=",vue">
     <meta name="theme-color" content="#0097A7">
 
     <!-- Disable Fucking Bloody Baidu Tranformation -->
@@ -212,7 +212,7 @@
     <!-- WebAPP Icons -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="寒山远黛">
-    <meta name="msapplication-starturl" content="http://yoursite.com/tags/React/">
+    <meta name="msapplication-starturl" content="http://yoursite.com/2019/01/15/Property-or-method-index-is-not-defined-on-the-instance-but-referenced-during-render/">
     <meta name="msapplication-navbutton-color" content="#0097A7">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="寒山远黛">
@@ -227,13 +227,16 @@
     
 
     <!-- The Open Graph protocol -->
-    <meta property="og:url" content="http://yoursite.com/tags/React/">
+    <meta property="og:url" content="http://yoursite.com/2019/01/15/Property-or-method-index-is-not-defined-on-the-instance-but-referenced-during-render/">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="标签: React | 寒山远黛">
+    <meta property="og:title" content="Vue warn &#34;Property or method index is not defined on the...&#34; | 寒山远黛">
     <meta property="og:image" content="/img/1.jpg">
     <meta property="og:description" content="">
-    
+    <meta property="og:article:tag" content="vue"> 
 
+    
+        <meta property="article:published_time" content="Tue Jan 15 2019 13:43:46 GMT+0800">
+        <meta property="article:modified_time" content="Tue Jan 15 2019 14:48:44 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -241,13 +244,43 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="http://yoursite.com/tags/React/index.html">
+        <link rel="canonical" href="http://yoursite.com/2019/01/15/Property-or-method-index-is-not-defined-on-the-instance-but-referenced-during-render/index.html">
     
 
     <!-- Structured-data for SEO -->
     
         
 
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "http://yoursite.com/2019/01/15/Property-or-method-index-is-not-defined-on-the-instance-but-referenced-during-render/index.html",
+    "headline": "Vue warn "Property or method index is not defined on the..."",
+    "datePublished": "Tue Jan 15 2019 13:43:46 GMT+0800",
+    "dateModified": "Tue Jan 15 2019 14:48:44 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "寒山远黛",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/1.jpg"
+        },
+        "description": "待有朝一日 , 我修炼成通彻天地的应龙 , 就让你做在龙角旁乘奔御风 , 看尽山河风光"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "寒山远黛",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/1.jpg"
+        }
+    },
+    "keywords": ",vue",
+    "description": "",
+}
+</script>
 
 
     
@@ -280,99 +313,274 @@
                         </button>
                     
 
-                    <!-- Index Module -->
-<div class="material-index mdl-grid">
-    
-    <div class="locate-thumbnail-symbol"></div>
+                    <!-- Post TOC -->
 
-    <!-- Pin on top -->
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+    <button id="post-toc-trigger-btn" class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#问题重现"><span class="post-toc-number">1.</span> <span class="post-toc-text">问题重现</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#小插曲"><span class="post-toc-number">2.</span> <span class="post-toc-text">小插曲</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#关于-undefined"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">关于 undefined</span></a></li></ol></li></ol>
+    </ul>
     
 
-    <!-- Normal Post -->
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
     
         
             <!-- Random Thumbnail -->
             <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
+            <script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 19 + 1);
 
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2018/11/20/关于-React-的一些使用心得/">关于 React 的一些使用心得</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            
-——————————————————————————————— EOF ————————————————————...
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2018/11/20/关于-React-的一些使用心得/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/1.jpg" width="44px" height="44px" alt="寒山远黛's avatar">
-            </div>
-            <div>
-                <strong>寒山远黛</strong>
-                <span>11月 20, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-              <!-- Category -->
-              <span class="post_entry-category">
-                  <a class="post_category-link" href="/categories/React/">React</a>
-              </span>
-            
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-
-    
-
-    
-        <script type="text/ls-javascript" id="thumbnail-script">
-    var randomNum;
-
-    var locatePost = $('.locate-thumbnail-symbol').next();
-    for(var i = 0; i < 10; i++) {
-        randomNum = Math.floor(Math.random() * 19 + 1);
-
-        locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
-        locatePost.children('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
     $('.post_thumbnail-random').addClass('lazy');
-
-        locatePost = locatePost.next();
-    }
 </script>
 
+        
+    
+            <p class="article-headline-p">
+                Vue warn "Property or method index is not defined on the..."
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/1.jpg" width="44px" height="44px" alt="Author Avatar">
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>寒山远黛</strong>
+        <span>1月 15, 2019</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-link" href="/tags/vue/">vue</a>
+    </li></ul>
+    
+
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=Vue warn &#34;Property or method index is not defined on the...&#34;&url=http://yoursite.com/2019/01/15/Property-or-method-index-is-not-defined-on-the-instance-but-referenced-during-render/index.html&pic=http://yoursite.com/img/1.jpg&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=Vue warn &#34;Property or method index is not defined on the...&#34;&url=http://yoursite.com/2019/01/15/Property-or-method-index-is-not-defined-on-the-instance-but-referenced-during-render/index.html&via=寒山远黛" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2019/01/15/Property-or-method-index-is-not-defined-on-the-instance-but-referenced-during-render/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://yoursite.com/2019/01/15/Property-or-method-index-is-not-defined-on-the-instance-but-referenced-during-render/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
     
 </div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <p><img src="https://ws1.sinaimg.cn/large/006tNc79ly1fz783saqm7j30p00faq39.jpg" alt="1_OrjCKmou1jT4It5so5gvOA"></p>
+<a id="more"></a>
+<blockquote>
+<p>8月份开始团队使用 React，所以 Vue 很久没接触了，今天同事问我一个问题，发出来记录下</p>
+</blockquote>
+<h4 id="问题重现"><a href="#问题重现" class="headerlink" title="问题重现"></a>问题重现</h4><p>一个输入键盘，keyUpHandle 为该触发事件函数，绑定 $event 和 index，在输入的时候 index 一直报错，虽然不影响功能实现，但洁癖看到红色报错还是很不爽的，一起来看吧！</p>
+<p><img src="https://ws2.sinaimg.cn/large/006tNc79ly1fz78cpiqwuj31a40b2n0d.jpg" alt="WX20190115-135901@2x"></p>
+<p>图中看到 <strong>“「Property or method index is not defined on the instance but referenced during render」”</strong> 报错，翻译过来就是 “属性或方法索引未在实例上定义，但引用了”，打开 Chrome dev，根据报错定位到该行代码</p>
+<p><img src="https://ws2.sinaimg.cn/large/006tNc79ly1fz78hr1dlnj30uo0b8jsx.jpg" alt="WX20190115-135927@2x"></p>
+<p>可以看到<strong>「 vm.index 」</strong>为 undefined</p>
+<h4 id="小插曲"><a href="#小插曲" class="headerlink" title="小插曲"></a>小插曲</h4><p>插段关于 JavaScript 的两个特殊数据类型：undefined 和 null，第一次碰见 undefined 的时候，尝试用 Java</p>
+<pre><code class="java">if(obj == undefined){
+    // doSomething...
+}
+</code></pre>
+<p>自作聪明了，查询后得知 JavaScript 写法是这样的：</p>
+<pre><code class="javascript">if(typeof(obj) == “undefined”){
+    // doSomething...
+}
+</code></pre>
+<p>这是为什么捏，为什么是这种写法捏，JavaScript 为什么偏偏多出了这种写法？我们知道在大多数计算机语言内，有且仅有一个表示”无”的值， C 是 NULL，Java 是 null，Python 是None，Ruby 是 nil，为什么 JavaScript 表示“无”的值是 undefined 和 null？</p>
+<p>JavaScript 诞生之初，Brendan Eich 根据 C 传统设计 null 自动转成 0，但这个在 Java 里是一个对象，由于 JavaScript 数据类型分为「原始类型」和「复合类型」，Eich 觉得 “无” 最好不是一个对象，而且 JavaScript 一开始并没错误处理机制，数据类型不匹配都是直接默认转换或者失败，这样不容易发现错误，从而设计了 undefined。</p>
+<h5 id="关于-undefined"><a href="#关于-undefined" class="headerlink" title="关于 undefined"></a>关于 undefined</h5><p>undefined 表示未声明或已声明但未赋值的变量或不存在的对象，函数没有返回值时，默认返回 undefined，判断是不是 undefined 使用 typeof 函数，其返回的字符串包括如下：</p>
+<pre><code class="javascript">“number”，“string”，“boolean”，“object”，“function”，“undefined”
+</code></pre>
+<hr>
+<p>回到正题，错误提示 index 以声明但未赋值，Vue 里是有关于这段描述的，也是最独特的的特性之一，「<strong>非侵入性的响应式系统</strong>」，就是深入响应式原理啦～～</p>
+<p><strong>「Vue 不允许动态添加根级响应式属性，所以你必须在初始化实例前声明根级响应式属性，哪怕只是一个空值」</strong>，ok，到这里，问题就解决了，既然说了可以声明空值，那就声明一个空值！</p>
+<pre><code class="vue">data() {
+    return{
+        index: &#39;&#39;
+    }
+}
+</code></pre>
+<p>大功告成～</p>
+
+        
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+    <!-- 使用 来必力 -->
+<div id="livere-comment">
+    <div id="lv-container" data-id="city" data-uid="MTAyMC8zODEwOC8xNDYzOA==">
+	<script type="text/ls-javascript" id="livere-comment-js">
+   (function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
+       if (typeof LivereTower === 'function') { return; }
+       j = d.createElement(s);
+       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+       j.async = true;
+       e.parentNode.insertBefore(j, e);
+   })(document, 'script');
+	</script>
+</div>
+</div>
+<style>
+    #livere-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2018/12/13/Markdown-生成目录结构/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
 
 
                     
@@ -531,6 +739,14 @@ It will not impact the appearance and can give developers a lot of support :)
 </aside>
 
                     
+
+                    
+                        <!-- Footer Top Button -->
+                        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
 
                     
 
