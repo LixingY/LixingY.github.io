@@ -236,7 +236,7 @@
 
     
         <meta property="article:published_time" content="Tue Nov 20 2018 15:55:25 GMT+0800">
-        <meta property="article:modified_time" content="Fri Nov 30 2018 13:51:34 GMT+0800">
+        <meta property="article:modified_time" content="Fri Mar 08 2019 18:26:06 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -259,7 +259,7 @@
     "mainEntityOfPage": "http://yoursite.com/2018/11/20/关于-React-的一些使用心得/index.html",
     "headline": "关于 React 的一些使用心得",
     "datePublished": "Tue Nov 20 2018 15:55:25 GMT+0800",
-    "dateModified": "Fri Nov 30 2018 13:51:34 GMT+0800",
+    "dateModified": "Fri Mar 08 2019 18:26:06 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "寒山远黛",
@@ -335,6 +335,14 @@
 
     <!-- Left aligned menu below button -->
     
+    
+    <button id="post-toc-trigger-btn" class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#React是什么？"><span class="post-toc-number">1.</span> <span class="post-toc-text">React是什么？</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#一些特性"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">一些特性</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#安装"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">安装</span></a></li></ol></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#ReactDOM-render"><span class="post-toc-number">2.</span> <span class="post-toc-text">ReactDOM.render</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#HTML-标签-与-React-组件"><span class="post-toc-number">3.</span> <span class="post-toc-text">HTML 标签 与 React 组件</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#JavaScript-表达式"><span class="post-toc-number">4.</span> <span class="post-toc-text">JavaScript 表达式</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#属性表达式"><span class="post-toc-number">4.1.</span> <span class="post-toc-text">属性表达式</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#JSX"><span class="post-toc-number">4.1.1.</span> <span class="post-toc-text">JSX</span></a></li></ol></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#子节点表达式"><span class="post-toc-number">4.2.</span> <span class="post-toc-text">子节点表达式</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#JSX-1"><span class="post-toc-number">4.2.1.</span> <span class="post-toc-text">JSX</span></a></li></ol></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#注释"><span class="post-toc-number">4.3.</span> <span class="post-toc-text">注释</span></a></li></ol></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#延展属性-Spread-Attributes"><span class="post-toc-number">5.</span> <span class="post-toc-text">延展属性 (Spread Attributes)</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#组件-Component"><span class="post-toc-number">6.</span> <span class="post-toc-text">组件 (Component)</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#属性-props"><span class="post-toc-number">7.</span> <span class="post-toc-text">属性 (props)</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#遍历对象属性"><span class="post-toc-number">7.1.</span> <span class="post-toc-text">遍历对象属性</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#React-Children-map"><span class="post-toc-number">7.1.1.</span> <span class="post-toc-text">React.Children.map</span></a></li><li class="post-toc-item post-toc-level-6"><a class="post-toc-link" href="#React-Children-forEach"><span class="post-toc-number">7.1.2.</span> <span class="post-toc-text">React.Children.forEach</span></a></li></ol></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#PropTypes"><span class="post-toc-number">7.2.</span> <span class="post-toc-text">PropTypes</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#默认属性-defaultProps"><span class="post-toc-number">7.3.</span> <span class="post-toc-text">默认属性 (defaultProps)</span></a></li></ol></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#ref-属性-获取真实的-DOM-节点"><span class="post-toc-number">8.</span> <span class="post-toc-text">ref 属性(获取真实的 DOM 节点)</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#State"><span class="post-toc-number">9.</span> <span class="post-toc-text">State</span></a></li></ol>
+    </ul>
     
 
 
@@ -478,7 +486,202 @@
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
         <a id="more"></a>
-<p>——————————————————————————————— EOF —————————————————————————————————-</p>
+<p><img src="https://ws2.sinaimg.cn/large/006tKfTcgy1g0uayrvb0ij30m809hgpv.jpg" alt="1817639419-5c7e7ca435f0f_articlex"></p>
+<blockquote>
+<p>​    A declarative, efficient, and flexible JavaScript library for building user interfaces</p>
+<p>按我的理解就是 react 就是一个专注于 UI 的库</p>
+</blockquote>
+<p>​    用 react 半年已久，感觉自己始终是个单纯的使用者，而不是从设计者角度来考虑的使用者，文章主要是记录一些对 react 知识的一个梳理以及不断深入的过程。</p>
+<p>​    将会从组件 (Component) 以及组件的属性 (props) 、状态 (state) 、生命周期等方面进行探讨。</p>
+<h4 id="React是什么？"><a href="#React是什么？" class="headerlink" title="React是什么？"></a>React是什么？</h4><p>​    React 是 Facebook 推出的开源 JavaScript Library，一个用于组建用户界面的JavaScript库，以更简单的方式来创建交互式用户界面，许多革新性的 Web 观念开始流行起来，比如 Virtual DOM、Component，声明式渲染等。</p>
+<h5 id="一些特性"><a href="#一些特性" class="headerlink" title="一些特性"></a>一些特性</h5><ol>
+<li>当数据改变时，React 将高效的更新和渲染需要更新的组件，声明式视图使代码更可预测，更容易调试。</li>
+<li>构建封装管理自己的状态的组件，然后将它们组装成复杂的用户界面，由于组件逻辑是用JavaScript编写的，而不是模板，所以可以轻松地通组件传递数据，并保持DOM状态。</li>
+</ol>
+<h5 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h5><p>通过 <a href="https://github.com/facebook/create-react-app" target="_blank" rel="noopener">Create React App </a>来完成</p>
+<pre><code class="npm">npx create-react-app my-app
+cd my-app
+npm start
+</code></pre>
+<p>详情点<a href="https://zh-hans.reactjs.org/docs/create-a-new-react-app.html#create-react-app" target="_blank" rel="noopener">这里</a>。</p>
+<h4 id="ReactDOM-render"><a href="#ReactDOM-render" class="headerlink" title="ReactDOM.render"></a>ReactDOM.render</h4><blockquote>
+<p>ReactDOM.render(element, container,[, callback])</p>
+</blockquote>
+<pre><code class="react">ReactComponent render(
+  ReactElement element,
+  DOMElement container,
+  [function callback]
+)
+</code></pre>
+<p>渲染一个<code>ReactElement</code>到DOM中</p>
+<ul>
+<li><code>element</code>，要渲染的的 <code>ReactElement</code></li>
+<li><code>container</code>，渲染结果在 DOM 中插入的位置</li>
+<li><code>callback</code>，回调函数，可选。传入该值时，会在组件渲染完或更新完成后调用</li>
+<li>返回值：React组件</li>
+</ul>
+<pre><code class="react">ReactDOM.render(&lt;App /&gt;, document.getElementById(&#39;root&#39;));
+</code></pre>
+<p>看过一篇关于  ReactDom.render 的文章， APP就是 <code>Component</code> 。而<code>&lt;APP /&gt;</code> 是 <code>Element</code>，更详细的内容请看<a href="https://justjavac.com/javascript/2018/02/09/re-talk-about-reactdom-render.html" target="_blank" rel="noopener">这里</a>。</p>
+<h4 id="HTML-标签-与-React-组件"><a href="#HTML-标签-与-React-组件" class="headerlink" title="HTML 标签 与 React 组件"></a>HTML 标签 与 React 组件</h4><p>React 可以渲染 HTML 标签 (strings) 或 React 组件 (classes)， 要渲染 HTML 标签，只需在 JSX 里使用小写字母开头的标签名。</p>
+<pre><code class="react">let divElement = &lt;div className=&quot;div&quot; /&gt;;
+React.render(divElement, document.root);
+</code></pre>
+<p>渲染React 组件，只需创建一个大写字母开头的本地变量。</p>
+<pre><code class="react">let MyComponent = ...;
+let myElement = &lt;MyComponent someProperty={true} /&gt;;
+React.render(myElement, document.body);
+</code></pre>
+<ul>
+<li>React 的 JSX 里约定分别使用首字母大、小写来区分本地组件的类和 HTML 标签。</li>
+</ul>
+<h4 id="JavaScript-表达式"><a href="#JavaScript-表达式" class="headerlink" title="JavaScript 表达式"></a>JavaScript 表达式</h4><h5 id="属性表达式"><a href="#属性表达式" class="headerlink" title="属性表达式"></a>属性表达式</h5><p>使用 JavaScript 表达式作为属性值，使用一对花括号<code>{}</code>包围而不是 <code>&quot;&quot;</code>。</p>
+<h6 id="JSX"><a href="#JSX" class="headerlink" title="JSX"></a>JSX</h6><pre><code class="react">let person  = &lt;Person name = {user.isLogin ?  user.name: &#39;&#39;} /&gt;;
+</code></pre>
+<h5 id="子节点表达式"><a href="#子节点表达式" class="headerlink" title="子节点表达式"></a>子节点表达式</h5><h6 id="JSX-1"><a href="#JSX-1" class="headerlink" title="JSX"></a>JSX</h6><pre><code class="react">let content = &lt;Container&gt;{user.isLogin ? &lt;Nav /&gt; : &lt;Login /&gt;}&lt;/Container&gt;;
+</code></pre>
+<h5 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h5><p>JSX 里添加注释就是在标签的子节点用<code>{}</code>包围。</p>
+<pre><code class="react">class ReactDemo extends Component {
+  render() {
+    return (
+      &lt;View style={styles.container}&gt;
+        {/*这是一段注释*/}
+        &lt;Text style={styles.tips}
+          textShadowColor=&#39;yellow&#39;&gt;
+          React Native!
+        &lt;/Text&gt;
+      &lt;/View&gt;
+    );
+  }
+}
+</code></pre>
+<h4 id="延展属性-Spread-Attributes"><a href="#延展属性-Spread-Attributes" class="headerlink" title="延展属性 (Spread Attributes)"></a>延展属性 (Spread Attributes)</h4><pre><code class="react">let props = {};
+props.foo=x;
+props.bar=y;
+let component = &lt;Component {...props} /&gt;;
+</code></pre>
+<p>传入的对象会被复制到组件内。</p>
+<p>​    可以多次使用，也可以和其它属性一起用，但是必须得注意顺序，和所有代码一样，后面会覆盖前面，<strong>…是ES6数组里的延展操作符(Spread Operator)</strong>，</p>
+<pre><code class="react">let props = {foo: &#39;default};
+let component = &lt;CardComponent {...props} foo={&#39;override&#39;} /&gt;
+</code></pre>
+<h4 id="组件-Component"><a href="#组件-Component" class="headerlink" title="组件 (Component)"></a>组件 (Component)</h4><p>React 允许将代码封装成组件 (Component)，然后在代码里置入这个组件。</p>
+<pre><code class="react">class HelloWorld extends React.Component{
+    render() {
+        let views=[];
+        views.push(&lt;h1&gt;Hello {this.props.name}&lt;/h1&gt;);
+        return views;
+    }
+}
+
+ReactDOM.render(&lt;HelloWorld name={&#39;world&#39;}/&gt;, document.getElementById(&#39;root&#39;));
+</code></pre>
+<p><strong>哈哈～，真是万物皆可 Hello World～</strong></p>
+<p>​    HelloWorld 就是一个组件类，模板置入<code>HelloWorld</code>时，会自动生成 <code>HelloWorld</code>实例，所有组件类都必须有自己的<code>render</code>方法，输出组件，<strong>注意：组件类的第一字母必须大写</strong>。</p>
+<h4 id="属性-props"><a href="#属性-props" class="headerlink" title="属性 (props)"></a>属性 (props)</h4><p>​    一般都是通过 <code>this.props.xxx</code>的形式获取组件对象的属性，对象的属性可以任意定义，但要避免与 JavaScript 关键字冲突。</p>
+<h5 id="遍历对象属性"><a href="#遍历对象属性" class="headerlink" title="遍历对象属性"></a>遍历对象属性</h5><p>​    <code>this.props.children</code> 会返回组件内对象的属性，React 提供 <code>React.Children</code> 来处理 <code>this.props.children</code>，我们可以用 <code>React.Children.map</code>或<code>React.Children.forEach</code> 来遍历子节点。</p>
+<h6 id="React-Children-map"><a href="#React-Children-map" class="headerlink" title="React.Children.map"></a>React.Children.map</h6><p><code>React.Children.map(children, **function**[(thisArg)])</code></p>
+<p>​    包在 children 里的每个函数，调用的函数的 this 设置为 thisArg ，如果 children 是一个嵌套的对象或数组，它将被遍历。如果 children 是 null 或 undefined ，返回 null 或 undefined 而不是一个空数组。</p>
+<h6 id="React-Children-forEach"><a href="#React-Children-forEach" class="headerlink" title="React.Children.forEach"></a>React.Children.forEach</h6><p><code>React.Children.forEach(children, function[(thisArg)])</code></p>
+<pre><code class="react">class NotesList extends React.Component{
+    render(){
+        return (
+            &lt;ol&gt;
+                {
+                    React.Children.map(this.props.children,(child)=&gt; {
+                        return &lt;h1&gt;{child}&lt;/h1&gt;;
+                    })
+                }
+            &lt;/ol&gt;
+        );
+    }
+}
+
+ReactDOM.render(&lt;NotesList&gt;
+    &lt;span&gt;hello&lt;/span&gt;
+    &lt;span&gt;world&lt;/span&gt;
+&lt;/NotesList&gt;, document.getElementById(&#39;root&#39;));
+</code></pre>
+<h5 id="PropTypes"><a href="#PropTypes" class="headerlink" title="PropTypes"></a>PropTypes</h5><p>​    组件内的属性可以接受任意值，字符串、对象、函数等等都可以，有时我们需要一种机制，验证别人使用组件时，提供的参数是否符合要求。 组件类的 <code>PropTypes</code> 属性，就是用来验证组件实例的属性是否符合要求。</p>
+<pre><code class="react">class Wedge extends Component {
+    static propTypes = {
+      outerRadius: PropTypes.number.isRequired,
+    };
+    render() {
+        return &lt;h1&gt; title:{this.props.outerRadius} &lt;/h1&gt;;
+    }
+}
+ReactDOM.render(&lt;Wedge /&gt;, document.getElementById(&#39;root&#39;));
+</code></pre>
+<p>​    可以看到上面的 <code>Wedge</code>组件有 outerRadius 属性，PropTypes 告诉 React，outerRadius 属性是 <code>number</code> 类型且必须的，对于非 number 类型，控制台会报出 Warning: Failed propType: Invalid prop <code>outerRadius</code> of type <code>string</code> supplied to <code>Wedge</code>, expected <code>number</code>。</p>
+<p>isRequired 只是  PropTypes 其中的一个属性，更多请看<a href="https://reactjs.org/docs/typechecking-with-proptypes.html#proptypes" target="_blank" rel="noopener">官方文档</a>。</p>
+<h5 id="默认属性-defaultProps"><a href="#默认属性-defaultProps" class="headerlink" title="默认属性 (defaultProps)"></a>默认属性 (defaultProps)</h5><p>除了既定属性，还可以通过 defaultProps 用来设置组件属性的默认值。</p>
+<pre><code class="react">class Wedge extends Component {
+    static defaultProps = {
+      outerRadius: 100
+    };
+     render() {
+        return &lt;h1&gt; {this.props.outerRadius}&lt;/h1&gt;;
+    }
+}
+ReactDOM.render(&lt;Wedge/&gt;, document.getElementById(&#39;root&#39;));
+</code></pre>
+<p>上述代码会输出 100。</p>
+<h4 id="ref-属性-获取真实的-DOM-节点"><a href="#ref-属性-获取真实的-DOM-节点" class="headerlink" title="ref 属性(获取真实的 DOM 节点)"></a>ref 属性(获取真实的 DOM 节点)</h4><p>​    组件并不是真实的 DOM 节点，而是存在于内存之中的一种数据结构，叫做虚拟 DOM (virtual DOM)。只有当它插入文档以后，才会变成真实的 DOM 。根据 React 的设计，所有的 DOM 变动，都先在虚拟 DOM 上发生，然后再将实际发生变动的部分，反映在真实 DOM上，这种算法叫做 DOM diff ，它可以极大提高网页的性能表现。</p>
+<p>但是，有时需要从组件获取真实 DOM 的节点，这时就要用到 ref 属性。</p>
+<pre><code class="react">class Alert extends React.Component {
+    showAlert(message) {
+        alert(`Debug:${message}`);
+    }
+
+    render() {
+        return null;
+    }
+}
+
+class Demo extends React.Component {
+    onClick = () =&gt; {
+        this.refs.alert.showAlert(&#39;Demo&#39;);
+    };
+
+    render() {
+        return &lt;div&gt;
+            &lt;h1 onClick={this.onClick}&gt;Click me&lt;/h1&gt;
+            &lt;Alert ref=&#39;alert&#39;/&gt;
+        &lt;/div&gt;;
+    }
+}
+
+ReactDOM.render(&lt;Demo/&gt;, document.getElementById(&#39;root&#39;));
+</code></pre>
+<p>​    组件 Demo 的子节点有一个 Alert 组件，为了调用组件提供的方法，必须获取到真实的dom 节点，虚拟 dom 无法获取用户输入，所以必须设置 ref 属性，然后 <code>this.refs[refName]</code>，即可获取真实 dom 节点。</p>
+<p>​    由于 this.refs[refName] 属性获取的是真实 dom ，所以必须等到虚拟 dom 插入文档以后，才能使用这个属性，否则会报错，上面代码中，通过为组件指定 Click 事件的回调函数，确保了只有等到真实dom 发生 Click 事件之后，才会读取 this.refs.[refName] 属性。</p>
+<p>React 组件支持很多事件，请查看<a href="https://facebook.github.io/react/docs/events.html#supported-events" target="_blank" rel="noopener">官方文档</a>。</p>
+<h4 id="State"><a href="#State" class="headerlink" title="State"></a>State</h4><p>​    组件会根据 props 的变化进行渲染，但组件无法改变自身 props，为了实现交互，这时候就用到了组件的 state，它是组件私有的，通过 state = {} 初始化，this.setState() 更新，而不是直接在 this.state 上修改。</p>
+<pre><code class="react">const clickCount = this.state.clickCount;
+this.setState(clickCount: clickCount + 1); 
+而不是 this.state.clickCount = clickCount + 1;
+</code></pre>
+<p>​    主要还是因为 this.state 是一个对象，去改变对象的值是毫无意义的，React 中只有去驱动UI的更新才会有意义，虽然可以尝试直接改变 this.state，但并没有驱动 UI 的重新渲染，这种操作也就毫无意义，所以需要使用this.setState 来驱动组件的更新过程。</p>
+<p>​    <code>setState()</code> 更新组件状态之后不会立即生效，react 为提高性能会按批次更新 state 然后 render, 即异步操作，所以 <code>setState()</code> 之后立即去取 state 的值并不是更新之后的状态。</p>
+<p><code>setState()</code> 第一个参数接受两种类型的参数，Object 以及Function</p>
+<pre><code class="react">this.setState({
+    msg: &#39;更新msg&#39;
+});
+</code></pre>
+<p>参数为 Object 时，可以即为对应 state 中的 key, value 即是新的值。</p>
+<p>参数为 Function 时，<code>setState()</code>会将上一个结果作为参数传入这个函数</p>
+<pre><code class="react">this.setState(prevState =&gt; { counter: prevState.counter + 1 })
+</code></pre>
+<p>setState() 第二个参数是回调函数，表示 state 更新完成。</p>
+<pre><code class="react">this.setState({
+    msg: &#39;更新msg&#39;
+}, () =&gt; {
+    console.log(&#39;更新完毕&#39;)
+});
+</code></pre>
+<p>可以使用 Promise 以及async/await,封装成同步/异步操作。</p>
+<p>——————————————————————————————— EOF —————————————————————————————————–</p>
 
         
     
@@ -630,7 +833,7 @@
             </a>
             <ul class="dropdown-menu">
                 <li>
-                <a class="sidebar_archives-link" href="/categories/CSS/">CSS<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/CSS3/">CSS3<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Git/">Git<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Homebrew/">Homebrew<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/IOS/">IOS<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/JavaScript/">JavaScript<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/categories/Markdown/">Markdown<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Node/">Node<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/React/">React<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Sublime-Text3/">Sublime Text3<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/axios/">axios<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/hexo/">hexo<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/vue/">vue<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/categories/windows/">windows<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/杂记/">杂记<span class="sidebar_archives-count">1</span></a>
+                <a class="sidebar_archives-link" href="/categories/CSS/">CSS<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/CSS3/">CSS3<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Git/">Git<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Homebrew/">Homebrew<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/IOS/">IOS<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/JavaScript/">JavaScript<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/categories/Markdown/">Markdown<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Node/">Node<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/React/">React<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Sublime-Text3/">Sublime Text3<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/axios/">axios<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/hexo/">hexo<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/vue/">vue<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/categories/windows/">windows<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/杂记/">杂记<span class="sidebar_archives-count">1</span></a>
             </li></ul>
         </li>
         
